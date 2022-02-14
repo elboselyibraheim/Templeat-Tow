@@ -1,0 +1,484 @@
+/* START VARIABLES  */
+:root {
+  --main-color: rgba(32, 223, 226);
+  --main-fonts: 'Cabin', sans-serif;
+}
+
+/* END VARIABLES */
+
+/* START GLOBAL RULS */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-fonts);
+  background-color: whitesmoke;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* mediam */
+
+@media (min-width: 992) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* END GLOBAL RULS */
+
+/* SATRT HEADER */
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container .image img {
+  width: 150px;
+  align-items: center;
+  border-radius: 90px;
+}
+
+header .container .links {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .links ul {
+  display: flex;
+  font-family: var(--main-fonts);
+  font-size: 15px;
+  font-weight: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container .links ul li {
+  list-style: none;
+  padding: 15px;
+}
+
+header .container .links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+header .container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container .btn a {
+  margin-left: 20px;
+
+}
+
+header .container .btn a:first-child button {
+  border: none;
+  font-family: var(--main-fonts);
+  font-size: 15px;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+header .container .btn a:nth-child(2) button {
+  color: var(--main-color);
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+/* End HEADER */
+
+/* START PLATFORM */
+main .platform .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+
+main .platform .container .plat-text h1 {
+  font-size: 35px;
+  font-family: var(--main-fonts);
+}
+
+main .platform .container .plat-text p {
+  flex-wrap: wrap;
+  color: darkgray;
+  max-width: fit-content;
+  font-family: var(--main-fonts);
+  font-size: 15px;
+  font-weight: 10px;
+}
+
+main .platform .container .plat-text a button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  margin-top: 15px;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+main .platform .container .plat-imag img {
+  height: 600px;
+  align-items: center;
+  border-radius: 300px;
+  margin-left: 20px;
+  transition: 0.3ms
+}
+
+main .platform .container .plat-imag img:hover {
+  height: 600px;
+  align-items: center;
+  border-radius: 300px;
+  margin-left: 20px;
+}
+
+@media (max-width: 850px) {
+  main .platform .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .platform .container .plat-imag img {
+    display: none;
+  }
+}
+
+/* END PLATFORMS */
+
+/* START features */
+
+.feau-text {
+  margin-top: 100px;
+  max-width: 300px;
+}
+
+.feau-text h2 {
+  font-size: 25px;
+  font-family: var(--main-fonts);
+}
+
+.feau-text p {
+  flex-wrap: wrap;
+  color: darkgray;
+  max-width: fit-content;
+  font-family: var(--main-fonts);
+  font-size: 15px;
+  font-weight: 10px;
+}
+
+.feau-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 80px;
+  transition: 0.3s;
+}
+
+.feau-card {
+  max-width: 150px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: var(--main-fonts);
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.feau-card:hover {
+  transform: scale(150%);
+}
+
+.feau-card img {
+  width: 100px;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+.feau-card h3 {
+  font-size: 20px;
+  font-family: var(--main-fonts);
+  color: black;
+}
+
+.feau-card p {
+  flex-wrap: wrap;
+  font-family: "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
+  font-size: 15px;
+  font-weight: 10px;
+  color: darkgray;
+}
+
+/* END features */
+
+
+/* START COURSES */
+
+.cours-text {
+  margin-top: 100px;
+  max-width: 300px;
+}
+
+.cours-text h2 {
+  font-size: 25px;
+  font-family: var(--main-fonts);
+}
+
+.cours-text p {
+  color: darkgray;
+  max-width: fit-content;
+  font-family: var(--main-fonts);
+  font-size: 15px;
+  font-weight: 10px;
+}
+
+
+.cours-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px
+}
+
+
+
+.cours-card {
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: var(--main-fonts);
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.cours-card img {
+  opacity: 100%;
+  width: 250px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.cours-card:hover {
+  transform: scale(120%);
+}
+
+
+
+.cours-card-text {
+  max-width: 250px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%)
+}
+
+span {
+  font-size: large;
+  font-weight: bold;
+}
+
+.cours-card h3 {
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: var(--main-fonts);
+  color: rgb(0, 0, 0);
+}
+
+.cours-card p {
+  flex-wrap: wrap;
+  font-family: var(--main-fonts);
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+
+/* END COURSES */
+
+
+/*  START Memeber */
+
+
+.members .container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+
+.members .container .member {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+}
+
+.members .container .member h2 {
+  font-size: 50px;
+  font-weight: 500px;
+  font-family: var(--main-fonts);
+
+}
+
+.members .container .member p {
+  font-size: 25px;
+  font-family: var(--main-fonts);
+  margin-top: -20px;
+}
+
+/*  END Memeber */
+
+/*  START PEOPEL */
+
+
+.peopel .container {
+  display: flex;
+  align-items: center;
+}
+
+.peopel .container .quote {
+  font-size: 75px;
+  max-width: 200px px;
+  margin-right: 150px;
+}
+
+.peopel .container .quote p {
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-family: var(--main-fonts);
+  color: gray;
+}
+
+.peopel .container .quote p span {
+  font-size: 20px;
+  font-family: var(--main-fonts);
+  color: rgb(0, 0, 0);
+}
+
+.peopel .container .image {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.peopel .container .image img {
+  margin: 25px;
+  width: 100px;
+  border-radius: 50px;
+
+}
+
+/*  END PEOPEL */
+
+/* START footer */
+
+footer .get-start {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  background-color: rgb(222, 246, 245);
+  padding: 20px;
+  align-items: center;
+}
+
+footer .get-start h1 {
+  font-size: 30px;
+  font-weight: 500px;
+  font-family: var(--main-fonts);
+
+}
+
+footer .get-start p {
+  flex-wrap: wrap;
+  font-size: 15px;
+  font-family: var(--main-fonts);
+  color: gray;
+}
+
+footer .get-start a button {
+
+  color: var(--main-color);
+  padding: 15px 20px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 5px;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto auto;
+  padding: 20px;
+}
+
+.social .ico img {
+  width: 100px;
+  align-items: center;
+}
+
+
+/* END footer */
